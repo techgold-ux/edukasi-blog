@@ -1,0 +1,191 @@
+/* ==============================
+   GLOBAL STYLING
+   ============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('download(1).jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+    min-height: 100vh; /* Memastikan background mengisi seluruh layar */
+  }
+
+  /* ==============================
+     2. HEADER DAN NAVIGASI
+     ============================== */
+  header {
+    background: #333; /* Warna biru untuk header */
+    color: white; /* Warna teks putih */
+    padding: 15px; /* Ruang di dalam header */
+    text-align: center; /* Teks berada di tengah */
+  }
+  
+  nav ul {
+    list-style: none; /* Menghilangkan bullet points */
+    display: flex; /* Menyusun menu secara horizontal */
+    justify-content: center; /* Menu berada di tengah */
+    gap: 20px; /* Jarak antar menu */
+  }
+  
+  nav a {
+    color: white; /* Warna teks putih untuk link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks */
+    transition: color 0.3s ease; /* Efek perubahan warna saat hover */
+  }
+  
+  nav a:hover {
+    color: #FFC107; /* Warna kuning saat link dihover */
+  }
+
+  .menu-icon {
+  display: none; /* Sembunyikan secara default */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block; /* Tampilkan ikon hamburger */
+  }
+
+  .nav-links {
+    display: none; /* Sembunyikan menu */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Tampilkan menu saat aktif */
+  }
+}
+  
+  /* ==============================
+     3. HERO SECTION
+     ============================== */
+  .hero {
+    background: url('assets/hero-image.jpg') no-repeat center center/cover; /* Gambar latar */
+    color: rgb(0, 0, 0); /* Warna teks putih */
+    text-align: center; /* Teks berada di tengah */
+    padding: 100px 20px; /* Ruang di dalam section */
+    height: 100vh; /* Full screen height */
+    display: flex; /* Mengatur posisi konten */
+    align-items: center; /* Vertikal center */
+    justify-content: center; /* Horizontal center */
+    background-attachment: fixed; /* Efek parallax */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem; /* Ukuran judul besar */
+    margin-bottom: 20px; /* Jarak antara judul dan paragraf */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem; /* Ukuran teks deskripsi */
+    margin-bottom: 30px; /* Jarak antara paragraf dan tombol */
+  }
+  
+  .cta-button {
+    background: #000000; /* Warna tombol kuning */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    font-weight: bold; /* Menebalkan teks */
+    transition: transform 0.3s ease, background 0.3s ease; /* Animasi hover */
+  }
+  
+  .cta-button:hover {
+    background: #FFA000; /* Warna lebih gelap saat dihover */
+    transform: scale(1.1); /* Memperbesar tombol saat dihover */
+    color: black;
+  }
+  
+  /* ==============================
+     4. FOOTER
+     ============================== */
+  footer {
+    background: #333; /* Warna latar footer */
+    color: white; /* Warna teks putih */
+    text-align: center; /* Teks berada di tengah */
+    padding: 20px; /* Ruang di dalam footer */
+    position: static; /* Footer tetap di bawah layar */
+    bottom: 0; /* Menempel di bagian bawah */
+    width: 100%; /* Lebar penuh */
+  }
+  
+  /* ==============================
+   RESPONSIF DESIGN
+   ============================== */
+
+/* Untuk Smartphone (lebar < 600px) */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 1.5rem; /* Ukuran judul lebih kecil */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem; /* Ukuran teks deskripsi lebih kecil */
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu menjadi vertikal */
+    gap: 10px; /* Jarak antar menu lebih kecil */
+  }
+
+  .cta-button {
+    padding: 8px 15px; /* Ruang tombol lebih kecil */
+    font-size: 0.9rem; /* Ukuran teks tombol lebih kecil */
+  }
+}
+
+/* Untuk Tablet (lebar 601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem; /* Ukuran judul sedikit lebih besar dibanding smartphone */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Ukuran teks deskripsi lebih besar */
+  }
+
+  nav ul {
+    gap: 15px; /* Jarak antar menu lebih besar */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Ruang tombol lebih besar */
+    font-size: 1rem; /* Ukuran teks tombol normal */
+  }
+}
+
+/* Untuk Layar Besar (lebar > 768px) */
+@media (min-width: 769px) {
+  .hero-content h1 {
+    font-size: 3rem; /* Ukuran judul besar */
+  }
+
+  .hero-content p {
+    font-size: 1.5rem; /* Ukuran teks deskripsi besar */
+  }
+
+  nav ul {
+    gap: 20px; /* Jarak antar menu lebih besar */
+  }
+
+  .cta-button {
+    padding: 12px 25px; /* Ruang tombol lebih besar */
+    font-size: 1.1rem; /* Ukuran teks tombol lebih besar */
+  }
+}

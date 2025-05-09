@@ -1,0 +1,125 @@
+/* ==============================
+   GLOBAL STYLING
+   ============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('download(1).jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+    min-height: 100vh; /* Memastikan background mengisi seluruh layar */
+  }
+
+/* ==============================
+     HEADER DAN NAVIGASI
+     ============================== */
+     header {
+      background: #333; /* Warna biru untuk header */
+      color: white; /* Warna teks putih */
+      padding: 15px; /* Ruang di dalam header */
+      text-align: center; /* Teks berada di tengah */
+    }
+    
+    nav ul {
+      list-style: none; /* Menghilangkan bullet points */
+      display: flex; /* Menyusun menu secara horizontal */
+      justify-content: center; /* Menu berada di tengah */
+      gap: 20px; /* Jarak antar menu */
+    }
+    
+    nav a {
+      color: white; /* Warna teks putih untuk link */
+      text-decoration: none; /* Menghilangkan garis bawah pada link */
+      font-weight: bold; /* Menebalkan teks */
+      transition: color 0.3s ease; /* Efek perubahan warna saat hover */
+    }
+    
+    nav a:hover {
+      color: #FFC107; /* Warna kuning saat link dihover */
+    }
+
+/* ==============================
+   ARTICLE PAGE - SIMPLE & MODERN
+   ============================== */
+   body {
+    color: #ffffff;
+    background-color: #312f2f;
+   }
+
+   .article {
+    max-width: 800px; /* Lebar maksimal artikel */
+    margin: 0 auto; /* Artikel berada di tengah */
+    padding: 50px 20px; /* Ruang di sekitar artikel */
+    text-align: left; /* Teks berada di kiri */
+    background-color: #000000; /* Latar belakang abu-abu muda */
+  }
+  
+  .article h1 {
+    font-size: 2.5rem; /* Ukuran judul besar */
+    margin-bottom: 20px; /* Jarak antara judul dan gambar */
+    color: #ffffff; /* Warna teks gelap */
+  }
+  
+  .article img {
+    width: 100%; /* Gambar menyesuaikan lebar artikel */
+    height: auto; /* Tinggi otomatis */
+    border-radius: 10px; /* Sudut melengkung */
+    margin-bottom: 20px; /* Jarak antara gambar dan teks */
+  }
+  
+  .article .intro {
+    font-size: 1.2rem; /* Ukuran teks paragraf pembuka */
+    margin-bottom: 30px; /* Jarak antara paragraf dan daftar tips */
+    color: #ffffff; /* Warna teks abu-abu gelap */
+  }
+  
+  .article ol {
+    padding-left: 20px; /* Indentasi untuk daftar */
+  }
+  
+  .article li {
+    margin-bottom: 20px; /* Jarak antar tips */
+  }
+  
+  .article h3 {
+    font-size: 1.5rem; /* Ukuran subjudul */
+    margin-bottom: 10px; /* Jarak antara subjudul dan penjelasan */
+    color: #007BFF; /* Warna biru untuk subjudul */
+  }
+  
+  .article p {
+    font-size: 1rem; /* Ukuran teks penjelasan */
+    line-height: 1.6; /* Spasi antar baris */
+    color: #ffffff; /* Warna teks gelap */
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 30px; /* Jarak antara tombol dan konten */
+    padding: 10px 20px;
+    background: #007BFF; /* Warna biru */
+    color: white; /* Warna teks putih */
+    text-decoration: none; /* Tanpa garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: background 0.3s ease; /* Animasi hover */
+  }
+  
+  .back-button:hover {
+    background: #0056b3; /* Warna lebih gelap saat dihover */
+  }
+
+  footer {
+    background: #333; /* Warna latar footer */
+    color: white; /* Warna teks putih */
+    text-align: center; /* Teks berada di tengah */
+    padding: 10px; /* Ruang di dalam footer */
+    position: static; /* Footer tetap di bawah layar */
+    bottom: 0; /* Menempel di bagian bawah */
+    width: 100%; /* Lebar penuh */
+  }
