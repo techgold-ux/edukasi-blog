@@ -1,0 +1,118 @@
+/* ==============================
+   GLOBAL STYLING
+   ============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('download(1).jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+    min-height: 100vh; /* Memastikan background mengisi seluruh layar */
+  }
+
+/* ==============================
+     HEADER DAN NAVIGASI
+     ============================== */
+     header {
+      background: #333; /* Warna biru untuk header */
+      color: white; /* Warna teks putih */
+      padding: 15px; /* Ruang di dalam header */
+      text-align: center; /* Teks berada di tengah */
+    }
+    
+    nav ul {
+      list-style: none; /* Menghilangkan bullet points */
+      display: flex; /* Menyusun menu secara horizontal */
+      justify-content: center; /* Menu berada di tengah */
+      gap: 20px; /* Jarak antar menu */
+    }
+    
+    nav a {
+      color: white; /* Warna teks putih untuk link */
+      text-decoration: none; /* Menghilangkan garis bawah pada link */
+      font-weight: bold; /* Menebalkan teks */
+      transition: color 0.3s ease; /* Efek perubahan warna saat hover */
+    }
+    
+    nav a:hover {
+      color: #FFC107; /* Warna kuning saat link dihover */
+    }
+
+
+/* ==============================
+   BLOG SECTION
+   ============================== */
+   .blog {
+    text-align: center; /* Teks berada di tengah */
+    padding: 50px 20px; /* Ruang di sekitar section */
+    background: url('assets/hero-image.jpg') no-repeat center center/cover; /* Gambar latar */
+    color: rgb(0, 0, 0); /* Warna teks putih */
+  }
+  
+  .blog h2 {
+    font-size: 2rem; /* Ukuran judul besar */
+    margin-bottom: 30px; /* Jarak antara judul dan artikel */
+    color: #333; /* Warna teks gelap */
+  }
+  
+  .articles {
+    display: flex; /* Menyusun artikel secara horizontal */
+    flex-wrap: wrap; /* Artikel pindah ke baris baru jika layar sempit */
+    gap: 20px; /* Jarak antar artikel */
+    justify-content: center; /* Artikel berada di tengah */
+  }
+  
+  article {
+    background: white; /* Latar putih untuk artikel */
+    padding: 15px; /* Ruang di dalam artikel */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+    width: 300px; /* Lebar artikel */
+    text-align: center; /* Teks berada di tengah */
+  }
+  
+  article img {
+    width: 100%; /* Gambar menyesuaikan lebar artikel */
+    height: 150px; /* Tinggi gambar tetap */
+    object-fit: cover; /* Gambar tidak terdistorsi */
+    border-radius: 10px; /* Sudut melengkung */
+  }
+  
+  article h3 {
+    font-size: 1.2rem; /* Ukuran judul artikel */
+    margin: 10px 0; /* Jarak antara gambar dan judul */
+  }
+  
+  article p {
+    font-size: 1rem; /* Ukuran teks deskripsi */
+    color: #555; /* Warna teks abu-abu gelap */
+  }
+
+  
+  /* ==============================
+     FOOTER
+     ============================== */
+     footer {
+        background: #333; /* Warna latar footer *s/
+        color: white; /* Warna teks putih */
+        text-align: center; /* Teks berada di tengah */
+        padding: 10px; /* Ruang di dalam footer */
+        position: fixed; /* Footer tetap di bawah layar */
+        bottom: 0; /* Menempel di bagian bawah */
+        width: 100%; /* Lebar penuh */
+      }
+
+@media (max-width: 768px) {
+ .blog h2 {
+   font-size: 1.5rem;
+  }  
+  article {
+   width: 100%; /* Artikel penuh di layar kecil */
+  }
+}

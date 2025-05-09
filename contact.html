@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi TechGold untuk informasi lebih lanjut tentang desain web dan teknologi terkini.">
+  <title>TechGold - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/Tantangan 1/home/index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Jika kamu memiliki pertanyaan atau ingin memberikan saran, silakan hubungi kami melalui form berikut:</p>
+
+    <!-- Form Kontak -->
+    <form action="https://formsubmit.co/rifaifaren400@gmail.com" method="POST">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentYear"></span> TechGold. All rights reserved.</p>
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
